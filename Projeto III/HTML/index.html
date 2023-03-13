@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+    
+   
+    
+    <title>KJYLL Corporation</title>
+</head>
+<body>
+    <header>
+<div class="logo">KJYLL Corporation</div>
+<div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<nav class="nav-bar">
+    <ul>
+        <li>
+            <a href="" class="active">Home</a>
+        </li>
+
+        <li>
+            <a href="#service">Services</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact-Us</a>
+        </li>
+
+    </ul>
+</nav>
+    </header>
+
+<!--banner-->
+
+<section class="banner">
+   
+</section>
+
+ <!--services-->
+<div class="Services" id="service">
+    <h2>Services</h2></a>
+</div>
+
+<div class="wrapper">
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+             <i class="fas fa-code"></i>
+          </div>
+          <h2>Web e Mobile</h2>
+       </div>
+       <div class="back-face">
+          <h2>Web e Mobile</h2>
+          <p>
+            Desenvolvemos aplicações Web e Mobile, abrangendo os requesitos dos nossos clientes.
+          </p>
+       </div>
+    </div>
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+             <i class="fas fa-chart-line"></i>
+          </div>
+          <h2>Software</h2>
+       </div>
+       <div class="back-face">
+          <h2>Software</h2>
+          <p>
+             Desenvolvemos Softwares nos Sistemas Operacionais: Windows e Linux. Para mais informações contate-nos.
+          </p>
+       </div>
+    </div>
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+             <i class="fas fa-rocket"></i>
+          </div>
+          <h2>Game Design</h2>
+       </div>
+       <div class="back-face">
+          <h2>Game Design</h2>
+          <p>
+             Desenvolvemos Jogos com Design integrado para todos os públicos, trabalhando com saúde e educação.
+          </p>
+       </div>
+    </div>
+ </div>
+
+<!--rodapé-->
+
+<footer id="contact">
+
+   <div id="footer_content">
+      <div id="footer_contacts">
+          <h2>KJYLL Corporation</h2>
+          <p>A tecnologia move o mundo.</p>
+
+          <div id="footer_social_media">
+              <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="https://pt-br.facebook.com/" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="https://web.whatsapp.com/" class="footer-link" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </a>
+          </div>
+      </div>
+      
+      <ul class="footer-list">
+          <li>
+              <h3>Contact-Us</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Endereço: Av.Boa Vista, Recife-PE</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Telefone: +55 081 40028922</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">E-mail: kjyll@gmail.com</a>
+          </li>
+      </ul>
+
+      <ul class="footer-list">
+          <li>
+              <h3>Services</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Web e Mobile</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Software
+              </a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Game Design</a>
+          </li>
+      </ul>
+
+      <div id="footer_subscribe">
+          <h3>Subscribe</h3>
+
+          <p>
+            Digite seu e-mail para ser avisado sobre
+            nossos serviços.
+          </p>
+
+          <div id="input_group">
+              <input type="email" id="email">
+              <button>
+                  <i class="fa-regular fa-envelope"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+
+  <div id="footer_copyright">
+      &#169
+      2023 Todos os Direitos Reservados
+  </div>
+   
+</footer>
+
+<script>
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function(){
+    navbar = document.querySelector(".nav-bar");
+    navbar.classList.toggle("active");
+}
+
+$('.nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+</script>
+
+
+
+</body>
+</html>
